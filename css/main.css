@@ -1,0 +1,303 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.8rem;
+	font-family: 'Arvo', sans-serif;
+	scroll-behavior: smooth;
+	color: #d9d6d0;
+	
+	overflow-x: hidden;
+	
+	
+}
+/* po kliknięciu na odnośnik w nawigacji 
+dzięki właściwości id strona zatrzymuje się na początku wybranej sekcji.*/
+
+[id] {
+	scroll-margin-top: 100px;
+	
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+}
+
+.navbar-brand {
+	font-size: 2.8rem;
+	height: 10px;
+
+}
+
+.navbar-nav {
+	font-size: 24px;
+	margin: 0 40px;
+	
+}
+
+/*header*/
+
+.home {
+	position: relative;
+	background-image: url(../img/shutters-669296_1920.jpg);
+	z-index: 0;
+	height: 800px;
+	opacity: 0.9;
+	font-weight: bolder;
+	z-index: 0;
+}
+.home-head {
+	font-weight: bolder;
+}
+
+.home-bottom {
+	font-size: 40px;
+}
+
+.btn {
+	font-size: 40px;
+	text-transform: uppercase;
+	padding: 20px 50px;
+	color: rgb(161, 144, 46);
+}
+
+/*aboutus */
+
+.aboutus {
+	/* background-color: rgb(58, 87, 88); */
+	position: relative;
+	background-color: #2375b4;
+	
+	background-image: url(../img/wooden-floor-1853409_1920.jpg);
+	color:white;
+	box-shadow: 40px;
+	z-index: 0;
+}
+
+.fa-ab {
+	font-size: 120px;
+	/* color:rgb(22, 137, 62); */
+	color: #0aa7e6;
+	padding: 20px;
+	cursor: pointer;
+}
+
+/*services*/
+.services {
+	
+	/* background-color: #3f85d0; */
+	
+	background-image: url(../img/wooden-floor-1853409_1920.jpg);
+	
+	
+}
+
+.services-option p {
+	
+	padding:20px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	background-color: #725010ba;
+	
+}
+
+.boxes {
+	position: relative;
+	height: 300px;
+	margin: 20px;
+	border-radius: 9%;
+
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 0;
+	border: 4px solid white;
+
+	font-size: 30px;
+
+	color: rgb(216, 208, 208);
+	transition: opacity 0.1s;
+	cursor: pointer;
+}
+
+.boxes:hover {
+	text-transform: uppercase;
+	
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.one {
+	background-image: url(../img/img-specjalizacja/four-saloon.jpg);
+}
+.two {
+	background-image: url(../img/img-specjalizacja/one-kitchen.jpg);
+}
+
+.three {
+	background-image: url(../img/img-specjalizacja/one-kitchen.jpg);
+}
+
+.four {
+	background-image: url(../img/img-specjalizacja/three-\ badrom.jpg);
+}
+
+/*gallery*/
+
+.card {
+	width: 400px;
+	background-position: center;
+	cursor: pointer;
+}
+
+.gallery {
+	background-color: #1a588e;
+	background-image: url(../img/wooden-floor-1853409_1920.jpg);
+	position: relative;
+	z-index: 0;
+	
+	
+	
+
+	
+}
+
+
+
+.images {
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	
+	
+}
+
+
+
+.images img {
+	
+	width: 1200;
+	height: 700px;
+	border-radius: 20px;
+	border: 1px solid rgb(213, 202, 202);
+	margin: 50px;
+	padding: 14px;
+	
+	
+	
+}
+
+
+
+/*sekcja kontaktowa */
+
+.contact {
+	
+	background-image: url(../img/wall-5048301_1920.jpg);
+	color: #222020;
+	font-weight: bolder;
+	font-size: 30px;
+	
+	
+}
+
+.contact-info p{
+	border: 5px solid white;
+	padding: 5px;
+	font-size: 30px;
+	border-radius: 20px;
+	background-color: #3e566e;
+	opacity:0.85;
+}
+
+.contact-info {
+	color:black;
+}
+
+.frame-src{
+	border-radius: 40px;
+	
+}
+
+
+
+.contact-fa {
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	color: rgb(241, 14, 14);
+}
+
+.footer p {
+	
+	height: 150px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 992px) {
+	.contact {
+		.frame-src {
+			width: 100%;
+		}
+	}
+}
+
+@media(min-width:768px) {
+	.services-name{
+		font-size: 21px;
+		padding: 0 41px;
+		font-weight: bolder;
+		object-fit: cover;
+	}
+}
+
+
+@media(min-width:576px) {
+	.images img {
+		padding:5px;
+		width: 500px;
+		object-fit: cover;
+	}
+	
+	
+}
+
+@media (max-width: 576px) {
+	.images img {
+		padding: 11px;
+		margin: 5px;
+		width: 500px;
+		height: 500px;
+		
+		
+	}
+	
+
+	.btn {
+		padding:20px;
+		font-size: 30px;
+	}
+	
+	.home {
+		.welcome-text {
+			font-size: 27px;
+		}
+	}
+
+}
